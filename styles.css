@@ -7,6 +7,7 @@
 body{
     background: #2f2f2f;
     color: white;
+    font-family: sans-serif;
 }
 
 .navbar{
@@ -45,6 +46,7 @@ body{
     align-items: center;
     padding: 5px 15px;
     gap: 2px;
+    border-radius: 0.25rem;
 
 }
 .select select{
@@ -52,6 +54,8 @@ body{
     background: none;
     border: none;
     outline: none;
+    font-size: 1rem;
+    
 }
 .main{
     width: 100%;
@@ -70,13 +74,16 @@ body{
     height: 99vh;
 }
 .sign-in{
-    background: red;
-    padding: 5px 15px;
+    color: rgba(255, 255, 255, 0.7);
+    background: #99161d;
+    vertical-align: text-top;
+    width: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
     outline: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border-radius: 5px;
-    color: white;
     border: none;
 }
 
@@ -103,28 +110,115 @@ body{
     font-weight: 400;
 }
 
-.contain p{
+.submit p{
     font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .contain{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    max-width: 61.5rem;
-}
-
-
-.submit {
-    display: flex;
     align-items: center;
     gap: 2px;
+    margin-top: 40px;
 }
-.submit input{
-    border: 1px solid transparent;
+
+.search{
+    width: 450px;
+    height: 57px;
+    position: relative;
     outline: none;
     background: black;
-    height: 30px;
+    opacity: 0.6;
+    border: 1px solid rgb(75, 71, 71);
+}
+
+.inputText {
+  font-size: 14px;
+  width: 200px;
+  height: 35px;
+  outline: none;
+  background: transparent;
+  opacity: 1;
+  outline: none;
+  width: 450px;
+  color: white;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-left: -1px;
+  margin-bottom: -40px;
+  padding: 20px;
+  border: none;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 15px;
+  transition: 0.2s ease all;
+}
+
+input:focus + .floating-label,
+input:not(:placeholder-shown):valid + .floating-label{
+  transform: translateY(-1em);
+  font-size: 0.8rem;
+}
+
+.inputText::placeholder{
+    color: transparent;
+}
+
+.get-start{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    min-height: 3.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #c11119;
+    border: none;
+    color: #fff;
+}
+
+.section-1{
+    width: 100%;
+    height: 75%;
+    background: #000;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.enjoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0 0 175px;
+}
+
+.enjoy h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.enjoy p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.right-img{
+    position: relative;
+}
+
+.right-video{
+    position: absolute;
+    top: 97px;
+    left: 78px;
+    z-index: 2;
 }
