@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2f2f2f;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 10rem;
+    height: auto;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    width: 150px;
+}
+
+.logo svg{
+    fill: red;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.select{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border: 1px solid #888787;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 2px;
+
+}
+.select select{
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+.main{
+    width: 100%;
+    height: 99vh;
+    margin-bottom: 10px;
+    /* z-index: -1; */
+    background: url("./assets/bg-image.jpg");
+    object-fit: contain;
+    position: relative;
+}
+
+.shadow{
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 2;
+    width: 100%;
+    height: 99vh;
+}
+.sign-in{
+    background: red;
+    padding: 5px 15px;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.center{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.center h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.center h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contain p{
+    font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5;
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 61.5rem;
+}
+
+
+.submit {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.submit input{
+    border: 1px solid transparent;
+    outline: none;
+    background: black;
+    height: 30px;
+}
